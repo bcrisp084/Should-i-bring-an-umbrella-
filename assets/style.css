@@ -1,0 +1,19 @@
+.jumbotron {
+  text-align: center;
+  background-color: rgb(20, 69, 141);
+  color: black;
+  border-radius: 0;
+  border-bottom: 3px solid black;
+  height: 60px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+.card-body {
+  height: 200px;
+}
+.form-inline {
+  height: 200px;
+}
