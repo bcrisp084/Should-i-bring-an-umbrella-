@@ -11,9 +11,21 @@
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
 }
-.card-body {
+
+.card-body1 {
   height: 200px;
 }
+.card-body {
+  height: 175px;
+}
 .form-inline {
-  height: 200px;
+  height: 450px;
+}
+.card {
+  margin-top: 20px;
+}
+.daily {
+  font-weight: bolder;
+  font-size: x-large;
+  text-align: center;
 }

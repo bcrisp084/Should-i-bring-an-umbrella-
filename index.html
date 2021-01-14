@@ -28,10 +28,10 @@
     <div class="container">
       <div class="row">
           <div class="sidebar">
-              <div class="col-sm-1">
+              <div class="col-md-1">
                   <div class="card" style="width: 19rem; float:left;">
                       <form class="form-inline my-2 my-lg-0">
-                          <input class="form-control mr-sm-2" type="search" id="search-input" placeholder="Search a location"
+                          <input class="form-control mr-sm-2" type="search" id="searchInput" placeholder="Search a location"
                               aria-label="Search">
                           <button class="btn btn-primary" type="submit" id="search">Search</button>
                       </form>
@@ -39,61 +39,41 @@
                       <div id="cities"></div>
                   </div>
               </div>
-
           <div class="row">
             <div class="col-md-11">
                 <div class="card" style="width:45rem">
-                    <div class="card-body">
+                    <div class="card-body1">
                         <h3 id="current-city" style="float: left;">
                             </h5>
                             <h3 id="current-date">
                                 </h5>
                                 <div id="weather-image"></div>
-                                <div class="temp"></div>
-                                <div class="wind"></div>
-                                <div class="humidity"></div>
+                                <div class="current-temp"></div>
+                                <div class="current-windspeed"></div>
+                                <div class="current-humidity"></div>
                                 <div class="uv-index"></div>
                     </div>
                 </div>
               </div>
           </div>
-          </div>
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-2">
-                    <div class="card">
-                      <div class="card-body">
-                      </div>
-                    </div>
-                  </div>
-              <div class="col-md-2">
-                <div class="card">
-                  <div class="card-body">
-                  </div>
-                </div>
+          <div>
+          <p class="daily">5 Day forecast</p>
+        </div>
+          <div class="row">
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-body">
+                <div class="city"></div>
+                <div class="wind"></div>
+                <div class="humidity"></div>
+                <div class="temp"></div>
               </div>
-              <div class="col-md-2">
-                <div class="card">
-                  <div class="card-body">
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <div class="card">
-                  <div class="card-body">
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <div class="card">
-                  <div class="card-body">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
+      </div>
+    </div>
               
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/script.js"></script>
   </body>
 </html>

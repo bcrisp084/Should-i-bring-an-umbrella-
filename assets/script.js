@@ -1,16 +1,27 @@
-$(document).ready(function () {
-  let currentDate = $("#date").text(moment().format("MM-DD-YYYY"));
-  let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
-  const inputEl = document.getElementById("searchInput");
-  const humidityEl = document.querySelector(".humidity");
-  const tempEl = document.querySelector(".temp");
-  const uvIndexEl = document.querySelector(".uv-index");
-  const windEl = document.querySelector(".wind");
+let currentDate = $("#current-date").text(moment().format("MM-DD-YYYY"));
+var APIKey = "7ce604287f42a2c24e790725482afef6";
+var searchInput = $("#searchInput").val();
 
-  searchEl.addEventListener("click", function () {
-    const searchTerm = inputEl.value;
-    getWeather(searchTerm);
-    searchHistory.push(searchTerm);
-    localStorage.setItem("search", JSON.stringify(searchHistory));
-  });
+$("#search").on("click", function (event) {
+  event.preventDefault();
+  if (searchInput !== "") {
+    var queryURL =
+      "http//api.openweathermap.org/data/2.5/weather?q=" +
+      searchInput +
+      "&units=imperial" +
+      APIKey;
+    $.ajax({
+      url: queryURL,
+      method: "GET",
+    }).then(function (response) {
+      $(".currrent-city").html(
+        "<h1>" + response.name + " Weather Details</h1>"
+      );
+      $(".current-wind").text("Wind Speed: " + response.wind.speed);
+      $(".current-humidity").text("Humidity: " + response.main.humidity);
+      $(".current-temp").text("Temperature (F) " + currerntTemp.toFixed(2));
+    });
+  } else {
+    alert("please enter a city");
+  }
 });
