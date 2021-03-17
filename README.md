@@ -12,7 +12,8 @@ Ajax for the API call. HTML was used for a static layout and CSS for styling.
 
 
 ## Link
-https://bcrisp084.github.io/Should-i-bring-an-umbrella-/
+
+- Here is a link to my deployed application [Click me](https://bcrisp084.github.io/Should-i-bring-an-umbrella-/)
 
 ![image](https://user-images.githubusercontent.com/73912705/105783970-c9ebfb80-5f45-11eb-9037-9e0dd00d1af0.png)
 ![image](https://user-images.githubusercontent.com/73912705/105783879-90b38b80-5f45-11eb-8163-6b39b54972db.png)
