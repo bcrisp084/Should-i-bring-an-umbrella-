@@ -3,7 +3,9 @@
 
 ## Info
 An application the produces the current weather as well as a 5 day forecast. At the top of the page
-the current date is displayed. 
+the current date is displayed. All you need to do is enter the city for the weather you are trying to 
+and voila. The current weather including the uv index, wind speed and temperature plus the 5 day forecast
+is desplayed below. 
 
 ## Technology
 The current date is formatted from Moment.js. Program file was constructed using Jquery, javascript and
