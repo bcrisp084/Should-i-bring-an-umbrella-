@@ -9,7 +9,13 @@ the current date is displayed.
 The current date is formatted from Moment.js. Program file was constructed using Jquery, javascript and
 Ajax for the API call. HTML was used for a static layout and CSS for styling. 
 
+## License
 
+![badge](https://img.shields.io/static/v1?label=license&message=MIT&color=green)
+
+##questions
+
+-You can reach me through my [Email](crispb73001@gmail.com)
 
 ## Link
 
